@@ -182,6 +182,19 @@ nav a:hover::after{
     transform:scale(1.08);
 }
 
+.aboutcard{
+    text-align:center;
+	margin-bottom:16px;
+    font-size: 125%;
+	transition:all .25s ease;
+}
+
+.aboutcard:hover{
+	transform:scale(1.04);
+}
+
+	
+
 /* ===== Classes ===== */
 
 .classes-container,
@@ -554,12 +567,17 @@ footer p:first-child{
 }
 
 .about-gallery{
-	padding:80px 0;
+    min-width: 100%;
+    margin: 0%;
+	padding:60px 0;
 	display:flex;
 	flex-direction:column;
 	gap:22px;
 	overflow:hidden;
     max-height: 20%;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+
 }
 
 .gallery-row{
@@ -590,11 +608,11 @@ footer p:first-child{
 }
 
 .row-right .gallery-track{
-	animation:scrollRight 28s linear infinite;
+	animation:scrollRight 26s linear infinite;
 }
 
 .row-left .gallery-track{
-	animation:scrollLeft 28s linear infinite;
+	animation:scrollLeft 26s linear infinite;
 }
 
 @keyframes scrollLeft{
