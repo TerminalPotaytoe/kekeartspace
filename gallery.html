@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | KeKe's Art Space</title>
+
+    <link rel="icon" type="image/x-icon" href="Kekeart.jpg">
+    <link rel="stylesheet" href="activities.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">KeKe's Art Space</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="activities.html">Activities</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="index.html#about">About Us</a>
+            <a href="index.html#classes">Classes & Fees</a>
+            <a href="index.html#hours">Hours</a>
+            <a href="index.html#reviews">Reviews</a>
+            <a href="index.html#location">Location</a>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <br>
+    <br>
+    <br>
+
+    <!-- GALLERY -->
+    <main>
+
+        <section class="gallery-section">
+
+            <h2>Our Gallery</h2>
+
+            <div class="full-gallery">
+
+                <div class="gallery-photo">
+                    <img src="images/keke6.jpeg" alt="KeKe's Art Space artwork">
+                </div>
+
+                <div class="gallery-photo">
+                    <img src="images/keke7.jpeg" alt="KeKe's Art Space artwork">
+                </div>
+
+                <div class="gallery-photo">
+                    <img src="images/keke8.jpeg" alt="KeKe's Art Space artwork">
+                </div>
+
+                <div class="gallery-photo">
+                    <img src="images/keke9.jpeg" alt="KeKe's Art Space artwork">
+                </div>
+
+                <div class="gallery-photo">
+                    <img src="images/keke10.jpeg" alt="KeKe's Art Space artwork">
+                </div>
+
+                <div class="gallery-photo">
+                    <img src="images/keke11.jpeg" alt="KeKe's Art Space artwork">
+                </div>
+
+                <div class="gallery-photo">
+                    <img src="images/keke12.jpeg" alt="KeKe's Art Space artwork">
+                </div>
+
+                <div class="gallery-photo">
+                    <img src="images/keke13.jpeg" alt="KeKe's Art Space artwork">
+                </div>
+
+                <div class="gallery-photo">
+                    <img src="images/keke14.jpeg" alt="KeKe's Art Space artwork">
+                </div>
+
+                <div class="gallery-photo">
+                    <img src="images/keke15.jpeg" alt="KeKe's Art Space artwork">
+                </div>
+
+                <div class="gallery-photo">
+                    <img src="images/keke16.jpeg" alt="KeKe's Art Space artwork">
+                </div>
+
+                <div class="gallery-photo">
+                    <img src="images/keke17.jpeg" alt="KeKe's Art Space artwork">
+                </div>
+
+                <div class="gallery-photo">
+                    <img src="images/keke18.jpeg" alt="KeKe's Art Space artwork">
+                </div>
+
+                <div class="gallery-photo">
+                    <img src="images/keke19.jpeg" alt="KeKe's Art Space artwork">
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 KeKe's Art Space. All rights reserved.</p>
+    </footer>
+    <script>
+    const elements = document.querySelectorAll(
+        ".activity-card, .gallery-photo"
+    );
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+
+                    // Stop observing after it appears
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 0.15
+        }
+    );
+
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+</script>
+</body>
+
+</html>

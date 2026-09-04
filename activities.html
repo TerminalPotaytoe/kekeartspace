@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Activities | KeKe's Art Space</title>
+
+    <link rel="icon" type="image/x-icon" href="Kekeart.jpg">
+    <link rel="stylesheet" href="activities.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">KeKe Art Space</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="activities.html">Activities</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="index.html#about">About Us</a>
+            <a href="index.html#classes">Classes & Fees</a>
+            <a href="index.html#hours">Hours</a>
+            <a href="index.html#reviews">Reviews</a>
+            <a href="index.html#location">Location</a>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="page-hero">
+        <div class="hero-content">
+            <h1>Activities</h1>
+            <p>Explore our wide variety of special activities you can participate in in keke art space!</p>
+        </div>
+    </section>
+
+
+    <!-- ACTIVITIES -->
+    <main>
+
+        <section class="activities-section">
+
+            <h2>Upcoming Activities</h2>
+
+            <!-- SEPTEMBER YARN CAMP -->
+            <div class="activity-card">
+
+                <div class="activity-images">
+                    <img src="images/sepcamp1.jpeg" alt="September Yarn Camp artwork">
+                    <img src="images/sepcamp2.jpeg" alt="September Yarn Camp artwork">
+                </div>
+
+                <div class="activity-content">
+
+                    <span class="activity-date">
+                        3 – 5 September
+                    </span>
+
+                    <h3>September Yarn Camp</h3>
+
+                    <p class="activity-subtitle">
+                        Making Art From Yarn
+                    </p>
+
+                    <p>
+                        Join us for a fun and creative yarn art camp where
+                        participants can explore different ways of creating
+                        artwork using yarn.
+                    </p>
+
+                    <p>
+                        Learn, experiment and create your own unique yarn artwork
+                        in a fun and friendly environment.
+                    </p>
+
+                    <a href="index.html#location" class="activity-button">
+                        Contact Us
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- WEDDING DAY ART -->
+            <div class="activity-card reverse">
+
+                <div class="activity-images">
+                    <img src="images/wedpic1.jpeg" alt="Wedding Day artwork">
+                    <img src="images/wedpic2.jpeg" alt="Wedding Day artwork">
+                    <img src="images/wedpic3.jpeg" alt="Wedding Day artwork">
+                </div>
+
+                <div class="activity-content">
+
+                    <span class="activity-label">
+                        Wedding Day
+                    </span>
+
+                    <h3>Wedding Day Art</h3>
+
+                    <p class="activity-subtitle">
+                        Order or Create Wedding Artwork Together
+                    </p>
+
+                    <p>
+                        Make your special day even more memorable with
+                        personalised artwork created especially for your wedding.
+                    </p>
+
+                    <p>
+                        You can either <strong>order a custom wedding artwork</strong>
+                        or enjoy the experience of <strong>creating artwork together</strong>
+                        with your loved ones.
+                    </p>
+
+                    <a href="index.html#location" class="activity-button">
+                        Contact Us
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CUSTOM ART -->
+            <div class="activity-card custom-art">
+
+                <div class="custom-art-image">
+                    <img src="images/keke27.jpeg" alt="Custom artwork by KeKe's Art Space">
+                </div>
+
+                <div class="activity-content">
+
+                    <span class="activity-label">
+                        Custom Artwork
+                    </span>
+
+                    <h3>Custom Art</h3>
+
+                    <p class="activity-subtitle">
+                        Bring Your Ideas to Life
+                    </p>
+
+                    <p>
+                        Looking for something personal and unique?
+                        Commission a custom artwork made specially for you.
+                    </p>
+
+                    <p>
+                        Whether it is a gift, a special memory, home decoration,
+                        or something completely different, let's create it together.
+                    </p>
+
+                    <a href="index.html#location" class="activity-button">
+                        Enquire Now
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 KeKe's Art Space. All rights reserved.</p>
+    </footer>
+    <script>
+    const elements = document.querySelectorAll(
+        ".activity-card, .gallery-photo"
+    );
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+
+                    // Stop observing after it appears
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 0.15
+        }
+    );
+
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+</script>
+</body>
+
+</html>
