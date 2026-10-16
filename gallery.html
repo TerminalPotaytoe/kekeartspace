@@ -1,141 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-2NYCXCLY9P"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-2NYCXCLY9P');
+	</script>
 
-    <title>Gallery | KeKe's Art Space</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Browse selected artworks from KeKe's Art Space — paintings, drawings and student work from our Singapore studio.">
+	<title>Gallery | KeKe's Art Space</title>
 
-    <link rel="icon" type="image/x-icon" href="Kekeart.jpg">
-    <link rel="stylesheet" href="activities.css">
+	<script>document.documentElement.classList.add('js');</script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="gallery.css">
+	<link rel="icon" type="image/x-icon" href="images/Kekeart.jpg">
 </head>
-
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <div class="logo">KeKe's Art Space</div>
+<header id="siteHeader">
+	<a href="index.html" class="logo">
+		<img src="images/kekebrand.jpeg" alt="KeKe Art Space">
+	</a>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="activities.html">Activities</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="index.html#about">About Us</a>
-            <a href="index.html#classes">Classes & Fees</a>
-            <a href="index.html#hours">Hours</a>
-            <a href="index.html#reviews">Reviews</a>
-            <a href="index.html#location">Location</a>
-        </nav>
-    </header>
+	<button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
+		<span></span>
+		<span></span>
+	</button>
 
+	<nav id="siteNav">
+		<a href="index.html#about">About</a>
+		<a href="index.html#classes">Classes &amp; Fees</a>
+		<a href="index.html#hours">Hours</a>
+		<a href="index.html#reviews">Reviews</a>
+		<a href="index.html#faq">FAQ</a>
+		<a href="index.html#location">Location</a>
+		<a href="activities.html">Activities</a>
+		<a href="gallery.html" class="active">Gallery</a>
+		<a href="booking.html" class="nav-cta">Booking</a>
+	</nav>
+</header>
 
-    <!-- HERO -->
-    <br>
-    <br>
-    <br>
+<div class="hero gallery-hero">
+	<div class="hero-inner">
+		<p class="eyebrow">Selected Works</p>
+		<h1>Our Gallery</h1>
+		<p class="hero-sub">Paintings · Drawings · Student Work</p>
+	</div>
+</div>
 
-    <!-- GALLERY -->
-    <main>
+<main>
 
-        <section class="gallery-section">
+	<section class="gallery-section" id="gallery">
 
-            <h2>Our Gallery</h2>
+		<div class="section-head">
+			<p class="eyebrow">Portfolio</p>
+			<h2>A Quiet Look Inside</h2>
+			<p class="section-sub">A selection of works created in the studio — by KeKe and by our students. Click any piece to view it larger.</p>
+		</div>
 
-            <div class="full-gallery">
+		<div class="gallery-masonry">
 
-                <div class="gallery-photo">
-                    <img src="images/keke6.jpeg" alt="KeKe's Art Space artwork">
-                </div>
+			<button class="gallery-item" type="button">
+				<img src="images/keke6.jpeg" alt="Artwork from KeKe's Art Space" loading="lazy">
+				<span class="gallery-zoom" aria-hidden="true">+</span>
+			</button>
 
-                <div class="gallery-photo">
-                    <img src="images/keke7.jpeg" alt="KeKe's Art Space artwork">
-                </div>
+			<button class="gallery-item" type="button">
+				<img src="images/keke7.jpeg" alt="Artwork from KeKe's Art Space" loading="lazy">
+				<span class="gallery-zoom" aria-hidden="true">+</span>
+			</button>
 
-                <div class="gallery-photo">
-                    <img src="images/keke8.jpeg" alt="KeKe's Art Space artwork">
-                </div>
+			<button class="gallery-item" type="button">
+				<img src="images/keke8.jpeg" alt="Artwork from KeKe's Art Space" loading="lazy">
+				<span class="gallery-zoom" aria-hidden="true">+</span>
+			</button>
 
-                <div class="gallery-photo">
-                    <img src="images/keke9.jpeg" alt="KeKe's Art Space artwork">
-                </div>
+			<button class="gallery-item" type="button">
+				<img src="images/keke9.jpeg" alt="Artwork from KeKe's Art Space" loading="lazy">
+				<span class="gallery-zoom" aria-hidden="true">+</span>
+			</button>
 
-                <div class="gallery-photo">
-                    <img src="images/keke10.jpeg" alt="KeKe's Art Space artwork">
-                </div>
+			<button class="gallery-item" type="button">
+				<img src="images/keke10.jpeg" alt="Artwork from KeKe's Art Space" loading="lazy">
+				<span class="gallery-zoom" aria-hidden="true">+</span>
+			</button>
 
-                <div class="gallery-photo">
-                    <img src="images/keke11.jpeg" alt="KeKe's Art Space artwork">
-                </div>
+			<button class="gallery-item" type="button">
+				<img src="images/keke11.jpeg" alt="Artwork from KeKe's Art Space" loading="lazy">
+				<span class="gallery-zoom" aria-hidden="true">+</span>
+			</button>
 
-                <div class="gallery-photo">
-                    <img src="images/keke12.jpeg" alt="KeKe's Art Space artwork">
-                </div>
+			<button class="gallery-item" type="button">
+				<img src="images/keke12.jpeg" alt="Artwork from KeKe's Art Space" loading="lazy">
+				<span class="gallery-zoom" aria-hidden="true">+</span>
+			</button>
 
-                <div class="gallery-photo">
-                    <img src="images/keke13.jpeg" alt="KeKe's Art Space artwork">
-                </div>
+			<button class="gallery-item" type="button">
+				<img src="images/keke13.jpeg" alt="Artwork from KeKe's Art Space" loading="lazy">
+				<span class="gallery-zoom" aria-hidden="true">+</span>
+			</button>
 
-                <div class="gallery-photo">
-                    <img src="images/keke14.jpeg" alt="KeKe's Art Space artwork">
-                </div>
+			<button class="gallery-item" type="button">
+				<img src="images/keke14.jpeg" alt="Artwork from KeKe's Art Space" loading="lazy">
+				<span class="gallery-zoom" aria-hidden="true">+</span>
+			</button>
 
-                <div class="gallery-photo">
-                    <img src="images/keke15.jpeg" alt="KeKe's Art Space artwork">
-                </div>
+			<button class="gallery-item" type="button">
+				<img src="images/keke15.jpeg" alt="Artwork from KeKe's Art Space" loading="lazy">
+				<span class="gallery-zoom" aria-hidden="true">+</span>
+			</button>
 
-                <div class="gallery-photo">
-                    <img src="images/keke16.jpeg" alt="KeKe's Art Space artwork">
-                </div>
+			<button class="gallery-item" type="button">
+				<img src="images/keke16.jpeg" alt="Artwork from KeKe's Art Space" loading="lazy">
+				<span class="gallery-zoom" aria-hidden="true">+</span>
+			</button>
 
-                <div class="gallery-photo">
-                    <img src="images/keke17.jpeg" alt="KeKe's Art Space artwork">
-                </div>
+			<button class="gallery-item" type="button">
+				<img src="images/keke17.jpeg" alt="Artwork from KeKe's Art Space" loading="lazy">
+				<span class="gallery-zoom" aria-hidden="true">+</span>
+			</button>
 
-                <div class="gallery-photo">
-                    <img src="images/keke18.jpeg" alt="KeKe's Art Space artwork">
-                </div>
+			<button class="gallery-item" type="button">
+				<img src="images/keke18.jpeg" alt="Artwork from KeKe's Art Space" loading="lazy">
+				<span class="gallery-zoom" aria-hidden="true">+</span>
+			</button>
 
-                <div class="gallery-photo">
-                    <img src="images/keke19.jpeg" alt="KeKe's Art Space artwork">
-                </div>
+			<button class="gallery-item" type="button">
+				<img src="images/keke19.jpeg" alt="Artwork from KeKe's Art Space" loading="lazy">
+				<span class="gallery-zoom" aria-hidden="true">+</span>
+			</button>
 
-            </div>
+		</div>
 
-        </section>
+	</section>
 
-    </main>
+	<section class="section cta-section">
+		<div class="cta-inner">
+			<p class="eyebrow">Join Us</p>
+			<h2>Make Something of Your Own</h2>
+			<p>All of the work above started with a single lesson. Come find your own line, colour or story.</p>
+			<a href="booking.html" class="btn btn-light">Book a Session</a>
+		</div>
+	</section>
 
+</main>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 KeKe's Art Space. All rights reserved.</p>
-    </footer>
-    <script>
-    const elements = document.querySelectorAll(
-        ".activity-card, .gallery-photo"
-    );
+<!-- =========================================================
+     Lightbox
+     ========================================================= -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Artwork viewer" aria-hidden="true">
+	<button class="lightbox-close" id="lightboxClose" aria-label="Close viewer">&times;</button>
 
-    const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("show");
+	<button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Previous artwork">&#10094;</button>
 
-                    // Stop observing after it appears
-                    observer.unobserve(entry.target);
-                }
-            });
-        },
-        {
-            threshold: 0.15
-        }
-    );
+	<figure class="lightbox-figure">
+		<img id="lightboxImg" src="" alt="">
+	</figure>
 
-    elements.forEach(element => {
-        observer.observe(element);
-    });
+	<button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Next artwork">&#10095;</button>
+
+	<p class="lightbox-counter" id="lightboxCounter"></p>
+</div>
+
+<a href="https://wa.me/6580877237" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+	<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false">
+		<path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.64-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.87 1.21 3.07.15.2 2.09 3.19 5.06 4.47.71.3 1.26.48 1.69.62.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35z"/>
+		<path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.83 9.83 0 0 0 12.04 2zm0 18.15h-.01c-1.49 0-2.95-.4-4.23-1.16l-.3-.18-3.14.82.84-3.06-.2-.32a8.24 8.24 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.25-8.19 8.25z"/>
+	</svg>
+</a>
+
+<footer>
+	<p>KeKe's Art Space</p>
+	<p>Create • Learn • Inspire</p>
+</footer>
+
+<script>
+(function () {
+	/* ---------------------------------------------------------
+	   Header scroll state
+	   --------------------------------------------------------- */
+	var header = document.getElementById('siteHeader');
+
+	function onScroll() {
+		if (window.scrollY > 14) { header.classList.add('scrolled'); }
+		else { header.classList.remove('scrolled'); }
+	}
+	onScroll();
+	window.addEventListener('scroll', onScroll, { passive: true });
+
+	/* ---------------------------------------------------------
+	   Mobile menu
+	   --------------------------------------------------------- */
+	var toggle = document.getElementById('navToggle');
+	var nav = document.getElementById('siteNav');
+
+	toggle.addEventListener('click', function () {
+		var open = header.classList.toggle('menu-open');
+		toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+	});
+
+	nav.addEventListener('click', function (e) {
+		if (e.target.tagName === 'A') {
+			header.classList.remove('menu-open');
+			toggle.setAttribute('aria-expanded', 'false');
+		}
+	});
+
+	document.addEventListener('keydown', function (e) {
+		if (e.key === 'Escape' && !lightbox.classList.contains('open')) {
+			header.classList.remove('menu-open');
+			toggle.setAttribute('aria-expanded', 'false');
+		}
+	});
+
+	/* ---------------------------------------------------------
+	   Section reveal
+	   --------------------------------------------------------- */
+	var sections = document.querySelectorAll('section');
+
+	if ('IntersectionObserver' in window) {
+		var io = new IntersectionObserver(function (entries) {
+			entries.forEach(function (entry) {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('show');
+					io.unobserve(entry.target);
+				}
+			});
+		}, { rootMargin: '0px 0px -8% 0px', threshold: 0.04 });
+
+		sections.forEach(function (s) { io.observe(s); });
+	} else {
+		sections.forEach(function (s) { s.classList.add('show'); });
+	}
+
+	/* ---------------------------------------------------------
+	   Gallery item reveal (staggered)
+	   --------------------------------------------------------- */
+	var items = Array.prototype.slice.call(document.querySelectorAll('.gallery-item'));
+
+	if ('IntersectionObserver' in window) {
+		var itemObserver = new IntersectionObserver(function (entries) {
+			entries.forEach(function (entry) {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('show');
+					itemObserver.unobserve(entry.target);
+				}
+			});
+		}, { rootMargin: '0px 0px -6% 0px', threshold: 0.08 });
+
+		items.forEach(function (item, i) {
+			item.style.transitionDelay = Math.min(i, 6) * 0.05 + 's';
+			itemObserver.observe(item);
+		});
+	} else {
+		items.forEach(function (item) { item.classList.add('show'); });
+	}
+
+	/* ---------------------------------------------------------
+	   Lightbox
+	   --------------------------------------------------------- */
+	var lightbox = document.getElementById('lightbox');
+	var lightboxImg = document.getElementById('lightboxImg');
+	var lightboxCounter = document.getElementById('lightboxCounter');
+	var btnClose = document.getElementById('lightboxClose');
+	var btnPrev = document.getElementById('lightboxPrev');
+	var btnNext = document.getElementById('lightboxNext');
+
+	var current = 0;
+	var sources = items.map(function (item) {
+		var img = item.querySelector('img');
+		return { src: img.getAttribute('src'), alt: img.getAttribute('alt') || '' };
+	});
+
+	function render(index) {
+		if (!sources.length) { return; }
+		current = (index + sources.length) % sources.length;
+		lightboxImg.setAttribute('src', sources[current].src);
+		lightboxImg.setAttribute('alt', sources[current].alt);
+		lightboxCounter.textContent = (current + 1) + ' / ' + sources.length;
+	}
+
+	function openLightbox(index) {
+		render(index);
+		lightbox.classList.add('open');
+		lightbox.setAttribute('aria-hidden', 'false');
+		document.body.classList.add('lightbox-open');
+		btnClose.focus();
+	}
+
+	function closeLightbox() {
+		lightbox.classList.remove('open');
+		lightbox.setAttribute('aria-hidden', 'true');
+		document.body.classList.remove('lightbox-open');
+		if (items[current]) { items[current].focus(); }
+	}
+
+	items.forEach(function (item, i) {
+		item.addEventListener('click', function () { openLightbox(i); });
+	});
+
+	btnClose.addEventListener('click', closeLightbox);
+	btnPrev.addEventListener('click', function () { render(current - 1); });
+	btnNext.addEventListener('click', function () { render(current + 1); });
+
+	/* click outside the image closes */
+	lightbox.addEventListener('click', function (e) {
+		if (e.target === lightbox || e.target.classList.contains('lightbox-figure')) {
+			closeLightbox();
+		}
+	});
+
+	/* keyboard controls */
+	document.addEventListener('keydown', function (e) {
+		if (!lightbox.classList.contains('open')) { return; }
+		if (e.key === 'Escape') { closeLightbox(); }
+		else if (e.key === 'ArrowLeft') { render(current - 1); }
+		else if (e.key === 'ArrowRight') { render(current + 1); }
+	});
+})();
 </script>
-</body>
 
+</body>
 </html>
